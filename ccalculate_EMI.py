@@ -1,0 +1,6 @@
+p=input("enter the principle:", )
+R=input("enter the rate:", )
+t=input("enter the time in months:", )
+r=float(R)/(12*100)
+EMI=int(p)*float(r)*((1+float(r))**int(t))/((1+float(r))**int(t)-1)
+print("EMI:",EMI)
